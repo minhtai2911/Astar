@@ -28,7 +28,7 @@ namespace Astar
 
         private Node[,] nodes;
 
-        private Timer timerBFS, timerAstar;
+        private Timer timerAstar;
 
         private int topStart = 0, leftStart = 0, topDest = 0, leftDest = 0;
 
@@ -112,11 +112,7 @@ namespace Astar
 
         {
 
-            timerBFS = new Timer();
-
             timerAstar = new Timer();
-
-            timerBFS.Interval = 50;
 
             timerAstar.Interval = 50;
 
